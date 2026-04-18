@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+.group p{
+    font-family: 'Bitcount Grid Double', monospace;
+}
+.group{
+    /*background: linear-gradient(180deg, pink, rgb(224, 223, 223));*/
+    width:100vw;
+    height: 100vh;
+    background-image: url(wallpaperflare.com_wallpaper.jpg);
+    text-align: center;
+    background-repeat:no-repeat;
+    background-size:cover ;
+    background-position: center;
+    /*background-position: calc(-300px);*/
+}
+.continue-button {
+    background-color: #ffce12;
+    width: 200px;
+    margin: 200px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 60px;
+    border-radius: 50px;
+    padding:20px 80px,10px 40px;
+}
+
+.continue-button:hover {
+  background-color: #f0c41a;
+}

@@ -1,0 +1,11 @@
+git config --global user.name "john12"
+git config --global user.email "john12@gmail.com"
+
+creating commands :-
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin "url"
+git push -u origin main

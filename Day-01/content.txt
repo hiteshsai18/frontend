@@ -1,0 +1,11 @@
+Tim Berners Lee - HTML in 1991 and we will be learning html5.
+Hakon Wium Lie - CSS in 1996 and we will be using css3.
+Brendan Eich - JavaScript in 1995 and we will be using es6.
+Twitter org. - Bootstrap and we will be using 5th version.
+Jordan Walke - React.js in 2013 through FaceBook an we will be using spa.
+Git & Github collaboration.
+Vercel for deployment.
+
+
+1. To create a html file, .html extension is required.
+2. In each and every folder, the first file should be index.html.
