@@ -1,0 +1,33 @@
+Text properties :-
+
+text-decoration : underline 3px solid red;
+or 
+text-decoration:none
+
+display:none hides the element and display:inline displays everything horizontally
+
+display
+flex-direction
+justify-content
+align-items
+
+Basic responsiveness :-
+-makes website adapt to different screen sizes.
+
+media queries : Apply CSS based on screen size.
+                @media(max-width:600px){
+                    body{
+                        background-color:lightblue:
+                    }
+                }
+
+Breakpoints :
+
+screen size limits
+
+  Device      width
+Extra small   <=576px
+Small         >576px
+Medium        >=768px
+Large         >=992px
+Extra large   >=1200px
