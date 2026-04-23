@@ -1,0 +1,41 @@
+How to integrate bootstrap to your html page ?
+
+Content delivery/ Content distribution :-
+
+copy and paste the link for bootstrap in the <head> tag.
+place <script> tag with logic for execution using javascript at the end of <body> tag. 
+
+Responsive breakpoints :-
+
+Breakpoint      Class infix     Dimensions
+X-small            None            <576px
+Small              sm              >=576px
+Medium             md              >=768px
+Large              lg              >=992px
+Extra large        xl              >=1200px
+Extra extra large  xxl             >=1400px
+
+Grid layout system :-
+
+Day-07/grid.png
+
+**Take six buttons and arrange them according to the following :-
+1 in x-small
+2 in small in a row
+3 in medium in a row
+4 in large in a row
+6 in extra large in a row
+
+**Take 12 buttons and arrange them according to the following :-
+x-small 2
+small 3
+medium 4
+large 6
+xl 12
+
+**Take 8 images and arrange them according to the following :-
+in small 1 images
+in x small 1 images
+in medium 2 images
+in large 4 images
+in extra large 8 image
