@@ -1,0 +1,10 @@
+.navbar{
+    background-color: #4242f6;
+}
+.nav-item .nav-link{
+    color: white;
+    font-weight: bold;
+}
+.d-block{
+    aspect-ratio: 3/2;
+}
