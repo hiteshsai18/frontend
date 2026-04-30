@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapido - Bike taxi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="rapido.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="data:image/png;base64,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" alt="Rapido logo" height="120"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto ml-0 mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About Us</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" href="#">Safety</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" href="#">Careers</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" href="#">Blog</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" href="#">Press</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid mt5">
+    <div class="row">
+        <div class="col-12 col-md-6 d-flex flex-column ms-5">
+            <h1 class="mt-1">
+                India's #1<br/>
+                Ride-hailing App
+            </h1>
+            <p class="mb-4">Quick, Affordable rides at your doorstep</p>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <img src="geotag.svg" alt="..." width="20px">
+                </span>
+                <input type="text" class="form-control" placeholder="Enter Pick Location" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">
+                    <img src="circletag.svg" alt="..." width="20px">
+                </span>
+                <input type="text" class="form-control" placeholder="Enter Drop Location" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <button class="btn btn-warning btn-lg mt=5">Book Ride</button>
+        </div>
+        <div class="col-12 col-md-5 mt-5">
+            <img src="banner.png" alt="" width="100%">
+        </div>
+    </div>
+</div>
+<div class="container-fluid mt-3 p-5 mb-3">
+    <div class="row">
+        <div class="col-12">
+            <h1 style="text-decoration: underline 3px solid yellow;">Our Services</h1>
+        </div>
+    <div class="col-4 mb-3">
+        <img src="https://content-cus.rapido.bike/image/serviceimage.svg" alt="" width="100%">
+    </div>
+      <div class="col-4 mb-3">
+        <img src="https://content-cus.rapido.bike/image/auto_service.png" alt="" width="100%">
+    </div>
+      <div class="col-4 mb-3">
+        <img src="https://content-cus.rapido.bike/image/cab_service.png" alt="" width="100%">
+    </div>
+      <div class="col-4 mb-3">
+        <img src="https://content-cus.rapido.bike/image/parcel_service.png" alt="" width="100%">
+    </div>
+      <div class="col-4 mb-3">
+        <img src="https://content-cus.rapido.bike/image/travel_service.png" alt="" width="100%">
+    </div>
+      <div class="col-4 mb-3">
+        <img src="https://content-cus.rapido.bike/image/metro_service.png" alt="" width="100%">
+    </div>
+    </div>
+</div>
+<div class="container-fluid mt-3 p-5 mb-3">
+  <div class="row">
+    <div class="col-12 mt-3 p-5 mb-3">
+      <h1 style="text-decoration: underline 3px solid yellow;">
+        What we offer
+      </h1>
+    </div>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-5">
+    <div class="col">
+      <div class="card h-100" style="border: none; width: 400px;">
+        <img src="https://content-cus.rapido.bike/image/image.png" class="card-img-top" alt="Quick Pickup">
+        <div class="card-body px-2">
+          <h5 class="card-title">Quick Pickup</h5>
+          <p class="card-text">
+            Pickups within minutes that help you save time on every ride. A Rapido is always nearby when you need to get moving.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100" style="border: none; width: 400px;">
+        <img src="https://content-cus.rapido.bike/image/bestfare_offer.png" class="card-img-top" alt="...">
+        <div class="card-body px-2">
+          <h5 class="card-title">Best Fares</h5>
+          <p class="card-text">
+            Affordable prices designed for everyday rides. Travel more, spend less without compromising on comfort.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100" style="border: none; width:400px;">
+        <img src="https://content-cus.rapido.bike/image/nevertofar_offer.png" class="card-img-top" alt="...">
+        <div class="card-body px-2">
+          <h5 class="card-title">Never Too Far</h5>
+          <p class="card-text">
+            Present across 400+ cities and counting. Wherever you go, find a Rapido ride close by.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="section4">
+    <div class="container-fluid p-5">
+        <div class="row">
+            <div class="col-6">
+        <img src="https://content-cus.rapido.bike/image/showcase_image.png" alt="" width="100%">
+            </div>
+            <div class="col-6 p-5">
+                <h1 class="mt-3" style="color: white; text-decoration: underline 3px solid yellow;"><b>Earn With Rapido</b></h1>
+                <h3 class="mt-3" style="color: white;">Become a Rapido Captain. Ride <br>when you want, work how you<br> want, and earn on your own terms.</h3>
+                            <button style="border-radius: 30px; background-color: rgb(255, 202, 33);"><h4><b>Start Earning -></b></h4></button>
+            </div>
+    </div>
+</div> 
+</div>
+<div class="section5">
+    <div class="container-fluid">
+        <div class="row">
+            <h1 style="text-align: center; text-decoration: underline 3px solid yellow;"><b>Download Now</b></h1>
+        <div class="col-6 mt-5 p-5">
+            <img src="https://content-cus.rapido.bike/image/dowloadnow_image.svg" alt="" width="80%">
+        </div>
+        <div class="col-6 mt-5 p-5">
+            <img src="https://content-cus.rapido.bike/image/rapido_captain.png" alt="" width="80%">
+        </div>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+<div class="section6">
+  <div class="logo">
+    <img src="data:image/png;base64,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" alt="">
+  </div>
+   <div class="footer-column">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Safety</a>
+      <a href="#">Blog</a>
+      <a href="#">Press</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer-column">
+      <a href="#">Customer Terms - Bike Taxi</a>
+      <a href="#">Customer Terms - Cabs and Auto</a>
+      <a href="#">Corporate Affairs</a>
+      <a href="#">Captain Terms - Bike Taxi</a>
+      <a href="#">Captain Terms - Cabs and Auto</a>
+    </div>
+    <div class="footer-social">
+      <a href="#"><img src="https://rapido-app-assets-staging.storage.googleapis.com/350983340ebe4bf4c1b6434f62f33a69_1738147364190.webp" alt=""></a>
+      <a href="#"><img src="https://rapido-app-assets-staging.storage.googleapis.com/b5151b47e5e0355ef8f0345965868534_1738147277449.webp" alt=""></a>
+      <a href="#"><img src="https://rapido-app-assets-staging.storage.googleapis.com/f4bcedc963e26c334e9d80c90d7bb0c5_1738147209224.webp" alt=""></a>
+    </div>
+</div>
+ <hr>
+
+  <p class="copyright">
+    © 2026 Rapido Transportation. All rights reserved.
+  </p>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

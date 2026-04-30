@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapido - Bike taxi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJwAAACUCAMAAABRNbASAAAAmVBMVEX////4yxkAAAD98cv7zRn/0Rr4yQD/1Rr90hryxhhpVgvCoBPFpBTethf/1xv///350D/++upXRgm2lhM2LAaDbA1NPwjluxf+9dv989H+/PT5zjb4zSv86K/62GP+9uH63Hr86KnPqhVDNwf500/74pP62GuYfQ/73ocaFQOniRH87LofGQNgTwp1YAwnIAQMCgGOdQ8uJQU015NHAAAGBElEQVR4nO2a22KjIBCGi4GoMdo0mthzU9KujZvz+z/cIgMqmINpk24u5r/pBhb8GGCGQW9uUCgUCoVCoVAoFAqFQqFQKBQKhUKhUKgz6vbu/qFzdj3c393+kOux8/U6eHomF9Dz0+D1q/P4XcK3l9eu0CXIQEXvry9330C7mwwuCVYBDian4r1NfoNM803eTmF7f/41NIn3/N5+Rl+79DfZCKHd15Zz2xn8qtlA3UGnFRv5D2yCjrSge/8vaBLv6MLrnIGN0h1Llu4sNemO2K5DzrAVQh6yBlvIOU+PdX6Q7vHpDIbLZ846tumiseM44/AwXffp8QDcn5+z0VBQOCsbIxoWxcsjjbt/9rO9nMFuLCgonP5OuJ5/jO5lH9vd0xkWHMCt+ffg6NM+Zzw5hxcBuMweZks40p3sMdwZ0MTY0ziOg0ZxWzhCdpvua5fhKBMyfjDbX6nS6qfrVnuVUqiz4ajRpqbu107DDZr/l7k+j+PMlzWMpYGwSsz9+sNVab8qZDzve6pWtg9Sjxpw1CWiOC96ajyTDnaZ7m/DcJT0e9uZ6LNwnpQE07nciLP5ItC+mvn5eL4udsBqwT0o3JRrjvqZrJwt0joc8zfJTG6b1ShtuOvu3x1wHzYcC3sOSMBRX/+QWipnH6/qhYWFwc/NCz/H0rGu2oaLEs4LkqrNPPZsuI8m222TrXywIGEGm3KnduFYLMfKz1F/WFUlYw3H+Mxo1Agm3WbSY0d8Gm5187VY1rFjiTNCN3bhhtXhRnZ1AUfTxCxrBJMd8f/TgouWxtjARsuA8xjmauSW+NNNNi4fVMLRVNtzVBpYwLlqRMkmU4ZduhbcZ2NWrbCqux6KLSXY/MVwuBiFrvAjjMhOhxHLFbvLmMtXynQlnBrdKoxYRHsajhKYjDxiLIrX8od1WOn+sef18cP8H24Go/I95dZ8MWjYgnQBcPDX2ciBuzDvW7eaVok76xdLisKABBzjYHe5DRg8JDNNRz/ss8nbwFpy8smJX0eW50U/BYsMI88Yt1r9qYZT634Jy531FRzM6owzmB65/hbWlhjYmeK9eedA/bG9HApvm296ejkLOPl3oVuAFbin4JQp9V5kCs6TQ9vqUmmCsW/O2vO9BfdgGS6dVlMG/YTLZO1U0nAjXQ8wgavhcmM9RQnA+YCj4Fy5oaf2fn04AhcmxmqgpOY21nW4TBsBoPJIwUUAp42iIwTA9bw6XPJNOO2+1aRJqnj5Y7jhOeBGrv4JYIssJB70eGxaFZx+rqumlcBG09Mqxzm1Ex8bzt4QJpx6ckbdIkAZlrM2RHhkQwDOVo9IbrujG8JyJRacMpbqRA5+oeAsV+JrV+JxuTSVK6Fcli6VK1mbrsQyXMOVWE54J1wPjnXgwDauglvWnfC0dMLMl054BSksWLsIIEA5gtKWTtgKXzvhpmkRvegUFhdTcE7uVeErq4UvMOVUnEJZpCOdYJL/WMdF+OItw5cV+HevuSEPeQ4HnrVPNJyzLWN4klaBX9lIdJLnU1Ut1oWrziq9IBjVTV+DawR+68i0Z7c6c+2HxVG3hKuU1Y9MsDbryr2y50rzFkem20NwhFhHt6XoEODGtbAxZPWkmoZTs9EG1mx/bpQGLQ6b5jFdwZWnVOov6x2OSAmX52VpcSCqJ9XMoEtidb7x+rXiVatjupngANyiVkDiKSQls6QXysfoCBHIinWSy1KAU0by80SaaT0fx36VYfox5EqzZGO5OLInwTFTQ1+mxvUSxsIiMQy4OteVcIwWFZx4alhZnvcVCPVYWCSOQT2bJGWWGdK2qaGVVNeTad3OzJ6r2ErNpNpoaTUyitsn1SdfR5iB/2zac5Nz4kXOReD2XeScegV2Cbj9V2AnXh5eAm7/5eGJ167Kz53zZc+ha9fTLqwl3KjFjVt7toMX1idd9VPOedh0oj/RsRcRJ5iuxXuPk3TsJcl1v1667hdz1/1K87pfBgu9XO9r9Jvr/gDh5qo/3ZB41/vRS6FLfy70+f3PhTThlX5ohUKhUCgUCoVCoVAoFAqFQqFQKBQKhUKZ+gemD4VPBo9GjAAAAABJRU5ErkJggg==" alt="Rapido logo"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">About Us</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" href="#">Safety</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" href="#">Careers</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" href="#">Blog</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" href="#">Press</a>
+        </li>
+                <li class="nav-item">
+          <a class="nav-link active" href="#">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid mt5">
+    <div class="row">
+        <div class="col-12 col-md-6 d-flex flex-column ms-5">
+            <h1 class="mt-1">
+                India's #1<br/>
+                Ride-hailing App
+            </h1>
+            <p class="mb-4">Quick, Affordable rides at your doorstep</p>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <img src="geotag.svg" alt="..." width="20px">
+                </span>
+                <input type="text" class="form-control" placeholder="Enter Pick Location" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">
+                    <img src="circletag.svg" alt="..." width="20px">
+                </span>
+                <input type="text" class="form-control" placeholder="Enter Pick Location" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+            <button class="btn btn-warning btn-lg mt=5">Book Ride</button>
+        </div>
+        <div class="col-12 col-md-5 mt-5">
+            <img src="banner.png" alt="" width="100%">
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

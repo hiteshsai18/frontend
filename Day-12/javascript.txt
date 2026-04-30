@@ -1,0 +1,7 @@
+//camelcasenotation
+
+//we can use special characters in naming variables in the start using underscore ex :- var _$b = 20;
+
+Primitive - Immutable. Eexample :- Number, String, Null, Boolean, Undefined, BigInt.
+
+Non-Primitive datatypes - Mutable. Example :- Array, Object.
