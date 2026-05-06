@@ -160,6 +160,9 @@
     .food-card .card-body{
       padding:30px;
       text-align:center;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
     }
 
     .food-card h5{
@@ -225,6 +228,11 @@
       padding:12px 30px;
       border-radius:40px;
       font-weight:600;
+      transition: 0.3s;
+    }
+     .about-content button:hover{
+      background:white;
+      transform:scale(1.05);
     }
 
     #contact{
