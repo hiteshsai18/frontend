@@ -97,23 +97,20 @@ const products = [
     }
 ];
 
-let container = document.getElementById('container');
-
-container.innerHTML = `${products.map((value,index) => {
+container.innerHTML = products.map((value, index) => {
     return `
+        <div style="border:1px solid red">
             <img src="${value.p_img}" width="20%"/>
             <h1>${value.p_name}</h1>
             <h3>${value.p_price}</h3>
-            <button>Add to cart</button>
-    `
-}).join("")
-}`;
+            <button onclick="addToCart(${index})">Add to cart</button>
+        </div>
+    `;
+}).join("");
 
-let cart=[]
+let cart = [];
 
-function addToCart(items){
-    cart=[...cart,items]
-    console.log(cart)
+function addToCart(index) {
+    cart = [...cart, products[index]];
+    console.log(cart);
 }
-
-addToCart(products[2])
